@@ -1,0 +1,141 @@
+:root {
+  /* Colors */
+
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2em;
+  font-family: "Open Sans", sans-serif;
+  color: var(--white);
+  background-color: var(--violet);
+  background-image: url("../assets/images/bg-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header__title-logo {
+  width: 155px;
+  height: 49pt;
+}
+
+.main {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.main__image {
+  display: block;
+  max-width: 100%;
+}
+
+.main__image,
+.main__text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__title,
+.main__subtitle {
+  font-family: "Poppins", sans-serif;
+}
+
+.main__subtitle {
+  margin-top: -0.5em;
+  font-size: 1.5rem;
+}
+
+.main__text {
+  width: 80%;
+}
+
+.main__button {
+  padding: 0.95em 6em;
+  margin-top: 1.5em;
+  font-size: 0.9rem;
+  color: var(--violet);
+  border: none;
+  border-radius: 50px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+  margin-top: 3em;
+}
+
+.icons__link {
+  display: inline-block;
+  color: inherit;
+  border: solid 1px var(--white);
+  border-radius: 50%;
+}
+
+.icons__image {
+  width: 35px;
+  height: 35px;
+  padding: 0.5em;
+}
+
+@media screen and (min-width: 1098px) {
+  body {
+    min-height: 100vh;
+    margin: 2em 4em;
+    overflow: hidden;
+    background-image: url("../assets/images/bg-desktop.svg");
+    background-size: cover;
+    background-position-x: -4.5em;
+    background-position-y: -2.5em;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+  }
+
+  .main,
+  .icons {
+    text-align: start;
+  }
+
+  .main__image {
+    margin: initial;
+  }
+
+  .main__div {
+    align-self: center;
+    width: 30%;
+    margin-left: 5em;
+  }
+
+  .main__title {
+    font-size: 2.5rem;
+  }
+
+  .main__subtitle {
+    font-size: 2.25rem;
+  }
+
+  .main__text {
+    margin: 0;
+    line-height: 25px;
+  }
+
+  .main__button {
+    padding: 1.15em 6em;
+  }
+
+  .footer {
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+  }
+}
